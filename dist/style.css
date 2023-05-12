@@ -1,0 +1,400 @@
+/* 전체 페이지 스타일링 */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+/* About 페이지 스타일링 */
+#about {
+    background-color: #fff;
+    margin-bottom: 1px; /* 원하는 공백 크기로 조정 */
+}
+
+.profile-image img {
+  max-width: 80%;
+  border-radius: 50%;
+}
+
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.left-content {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story,
+.interests {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.story h3,
+.interests h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.story p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.story-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.interests {
+  margin-top: 16px;
+}
+
+.interests h3, .concentration-heading {
+  text-align: left;
+  font-size: 24px;
+}
+
+.interest-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.interest-list li {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: fit-content;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.interest-list li:hover {
+  transform: translateY(-5px);
+}
+
+.interest-list li .emoji {
+  margin-right: 8px;
+}
+
+.interest-list li .text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#concentration {
+  margin-top: 16px;
+}
+
+#concentration h3 {
+  text-align: left;
+  font-size: 24px;
+}
+
+#concentration .interest-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+#concentration .interest-list li {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: fit-content;
+  white-space: nowrap;
+  text-align: left;
+}
+
+#concentration .interest-list li:hover {
+  transform: translateY(-5px);
+}
+
+#concentration .interest-list li .emoji {
+  margin-right: 8px;
+}
+
+#concentration .interest-list li .text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* CSS styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal.active {
+    display: flex;
+}
+
+
+/* 헤더 스타일링 */
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 네비게이션 스타일링 */
+nav {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs li {
+    margin-right: 20px;
+}
+
+.tabs a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.tabs a:hover {
+    color: #ffc107;
+}
+
+/* 각 섹션 스타일링 */
+section {
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.question-form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.question-form h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.question-form p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+#question-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#question-form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#question-form input,
+#question-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#question-form textarea {
+    resize: vertical;
+}
+
+#question-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 포트폴리오 섹션 스타일링 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* 블로그 섹션 스타일링 */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blog-posts .post {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 소셜 미디어 섹션 스타일링 */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffc107;
+}
+
+/* People Say 섹션 스타일링 */
+.client-reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.client-reviews .review {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS styles for the footer */
+footer {
+    text-align: center;
+}
